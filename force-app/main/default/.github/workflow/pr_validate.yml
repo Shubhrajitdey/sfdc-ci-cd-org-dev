@@ -1,0 +1,16 @@
+on:
+    pull_request:
+        types: [opened, synchronize, reopened]
+        branches:
+            - master
+        paths:
+            - 'force-app/**'
+jobs:
+    validate-branch-name:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Validate branch name requirements
+              uses: deepakputhraya/action-branch-name@master
+              with:
+                  regex: '([a-z])+\/([a-z])+'
+                  min_length: 6
