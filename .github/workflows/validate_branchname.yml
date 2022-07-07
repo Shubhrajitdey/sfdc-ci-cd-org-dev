@@ -10,6 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Validate branch name requirements
+              uses: actions/checkout
               uses: Shubhrajitdey/sfdc-ci-cd-org-dev@master
               with:
                   regex: '([a-z])+\/([a-z])+'
