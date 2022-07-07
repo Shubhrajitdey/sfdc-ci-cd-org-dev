@@ -1,0 +1,32 @@
+.todo {
+    border: 1px solid lightgray;
+    padding: .5rem;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 4px;
+    transition: all .5s ease;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: smaller;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.upcoming {
+    background-color: lightcoral;
+    color: whitesmoke;
+}
+
+.upcoming:hover {
+    background-color: aliceblue;
+    border-radius: 16px;
+}
+
+.completed {
+    background-color: darkturquoise;
+}
+
+.completed:hover {
+    background-color: aquamarine;
+    border-radius: 16px;
+}
